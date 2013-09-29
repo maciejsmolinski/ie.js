@@ -1,7 +1,6 @@
 # IE.JS
 
-The purpose of this small library is to make detecting Internet Explorer and it's version as simple as possible.
-Details about Internet Explorer's version are stored in global `IE` variable.
+Making Internet Explorer detection as simple as possible via global `IE` variable.
 
 # Sample Usage
 
