@@ -3,17 +3,18 @@
 (function (global, undefined) {
   'use strict';
 
-  var IE;
-  var IEInfo = (/(msie) ([\w.]+)/i).exec(global.navigator.userAgent);
+  global.IE = (function () {
+    var IEInfo = (/(msie) ([\w.]+)/i).exec(global.navigator.userAgent);
 
-  if (IEInfo) {
-    IE = {
-      valueOf : function () {
-        return parseInt(IEInfo && IEInfo[2], 10) || undefined;
-      }
-    };
-  }
-
-  global.IE = IE;
+    if (IEInfo) {
+      return {
+        valueOf : function () {
+          return parseInt(IEInfo && IEInfo[2], 10) || undefined;
+        }
+      };
+    } else {
+      return undefined;
+    }
+  }());
 
 }(this));
