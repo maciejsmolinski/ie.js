@@ -22,7 +22,7 @@ Making Internet Explorer detection as simple as possible via global `IE` variabl
     }
 ```
 
-`global.IE` might be an object (if Internet explorer is used) or undefined in case you're using modern browsers.
+`global.IE` might be an object (if Internet explorer used) or undefined in case you're using modern browsers.
 
 # Limitations
 
